@@ -3,15 +3,15 @@ using namespace std;
 
 void insertion_sort (int arr[], int num) {
     for (int i = 1; i < num; i++) {
-        int key = arr[i];
+        int key = arr[i]; // Save the current element (will be owerwritten)
         int j = i - 1;
 
         while (j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j]; // We are copying the original value to the right.
-            j--; // We shift the focus to the one to the left
+            arr[j + 1] = arr[j]; // Copy arr[j] to the right (duplicates it)
+            j--;
         }
 
-        // Insert the key here.
+        // Overwrite the leftmost duplicate with the key
         arr[j + 1] = key;
     }
 }
