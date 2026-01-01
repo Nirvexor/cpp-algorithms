@@ -33,6 +33,13 @@ The goal of this project is to provide clean, modular implementations of core al
 
 You can compile these files using any standard C++ compiler (like g++).
 
+**Example for Binary Search:**
+
+```bash
+g++ binary_search.cpp -o binary
+./binary
+```
+
 **Example for Bubble Sort:**
 
 ```bash
@@ -51,14 +58,6 @@ g++ insertion_sort.cpp -o insertion
 g++ selection_sort.cpp -o selection
 ./selection
 ```
-
-**Example for Binary Search:**
-
-```bash
-g++ binary_search.cpp -o binary
-./binary
-```
-
 
 ## Future Roadmap
 * Merge Sort (Divide and Conquer)
