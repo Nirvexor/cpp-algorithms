@@ -24,9 +24,9 @@ The goal of this project is to provide clean, modular implementations of core al
 * **Time Complexity:** O(n^2)
 * **Description:** Builds the final sorted array (or list) one item at a time. It assumes the first element is already sorted, then picks the next element and places it into the correct position relative to the sorted portion. Efficient for small data sets or nearly sorted lists.
 
-### 4. Insertion Sort
+### 4. Merge Sort
 * **File:** `merge_sort.cpp`
-* **Time Complexity:** $O(n \log n)$ (Best, Average, and Worst cases).
+* **Time Complexity:** $O(n log n)$
 * **Description:** A "Divide and Conquer" algorithm that recursively splits the array into halves until single elements remain, then merges the sorted halves back together. Unlike the previous algorithms, it guarantees efficient performance even for large datasets, though it requires extra memory for temporary arrays.
 
 ### 5. Selection Sort
