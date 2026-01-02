@@ -24,7 +24,12 @@ The goal of this project is to provide clean, modular implementations of core al
 * **Time Complexity:** O(n^2)
 * **Description:** Builds the final sorted array (or list) one item at a time. It assumes the first element is already sorted, then picks the next element and places it into the correct position relative to the sorted portion. Efficient for small data sets or nearly sorted lists.
 
-### 4. Selection Sort
+### 4. Insertion Sort
+* **File:** `merge_sort.cpp`
+* **Time Complexity:** $O(n \log n)$ (Best, Average, and Worst cases).
+* **Description:** A "Divide and Conquer" algorithm that recursively splits the array into halves until single elements remain, then merges the sorted halves back together. Unlike the previous algorithms, it guarantees efficient performance even for large datasets, though it requires extra memory for temporary arrays.
+
+### 5. Selection Sort
 * **File:** `selection_sort.cpp`
 * **Time Complexity:** O(n^2)
 * **Description:** An in-place comparison sort. It divides the input list into two parts: the sublist of items already sorted and the sublist of items remaining to be sorted. It repeatedly finds the minimum element from the unsorted sublist and moves it to the beginning.
@@ -53,6 +58,12 @@ g++ insertion_sort.cpp -o insertion
 ./insertion
 ```
 
+**Example for Merge Sort:**
+```bash
+g++ merge_sort.cpp -o merge
+./merge
+```
+
 **Example for Selection Sort:**
 ```bash
 g++ selection_sort.cpp -o selection
@@ -60,7 +71,6 @@ g++ selection_sort.cpp -o selection
 ```
 
 ## Future Roadmap
-* Merge Sort (Divide and Conquer)
 * Quick Sort
 * Linear Search (for performance comparison)
 * Jump Search
