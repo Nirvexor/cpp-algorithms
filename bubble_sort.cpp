@@ -3,15 +3,22 @@ using namespace std;
 
 void bubble_sort (int arr[], int num) {
     for (int i = 0; i < num - 1; i++) {
-        //Last i value are already in the place so we doN't need to sort the sorted value again.
+        //Last i value are already in the place so we don't need to sort the sorted value again.
+        
+        bool swapped = false;
+        
         for (int j = 0; j < num - i - 1; j++) {
             // Swap if the value is found is greater than the next value.
+            
             if (arr[j] > arr[j + 1]) {                
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                swapped = true;
             }
         }
+        
+        if (!swapped) break; // Array is sorted
     }
 }
 
